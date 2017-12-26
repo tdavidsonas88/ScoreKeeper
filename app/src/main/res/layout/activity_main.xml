@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="lt.tadasdavidsonas88.scorekeeper.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageButton
+            android:id="@+id/minusImageBtn1"
+            style="@style/MinusButtons"
+            android:layout_width="@dimen/plusMinusBtnSize"
+            android:layout_height="@dimen/plusMinusBtnSize"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="35dp"
+            android:layout_marginStart="35dp"
+            android:onClick="decreaseScore" />
+
+        <ImageButton
+            android:id="@+id/plusImageButton1"
+            style="@style/PlusButtons"
+            android:layout_width="@dimen/plusMinusBtnSize"
+            android:layout_height="@dimen/plusMinusBtnSize"
+            android:layout_alignBottom="@+id/minusImageBtn1"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="27dp"
+            android:layout_marginRight="27dp"
+            android:onClick="increaseScore" />
+
+        <TextView
+            android:id="@+id/scoreTextView1"
+            style="@style/ScoreText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="0"
+            android:textSize="50dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/TeamText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="13dp"
+            android:text="@string/team_1"
+            android:textSize="30dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageButton
+            android:id="@+id/minusImageBtn2"
+            style="@style/MinusButtons"
+            android:layout_width="@dimen/plusMinusBtnSize"
+            android:layout_height="@dimen/plusMinusBtnSize"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="33dp"
+            android:layout_marginStart="33dp"
+            android:onClick="decreaseScore" />
+
+        <ImageButton
+            android:id="@+id/plusImageBtn2"
+            style="@style/PlusButtons"
+            android:layout_width="@dimen/plusMinusBtnSize"
+            android:layout_height="@dimen/plusMinusBtnSize"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/minusImageBtn2"
+            android:layout_marginEnd="31dp"
+            android:layout_marginRight="31dp"
+            android:onClick="increaseScore" />
+
+        <TextView
+            android:id="@+id/scoreTextView2"
+            style="@style/ScoreText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="0"
+            android:textSize="50dp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            style="@style/TeamText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:text="@string/team_2"
+            android:textSize="30dp" />
+    </RelativeLayout>
+
+
+</LinearLayout>
